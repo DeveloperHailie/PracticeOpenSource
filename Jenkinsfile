@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Clone repository') {
       steps { 
-        git 'https://github.com/jwpark-sungshin/fork_vs_vfork.git'
+        git 'https://github.com/DeveloperHailie/PracticeOpenSource.git'
       }
     }
     stage('Build image') {
