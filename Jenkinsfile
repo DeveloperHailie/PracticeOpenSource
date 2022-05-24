@@ -32,9 +32,8 @@ pipeline {
         script {
           
           docker.withRegistry('https://registry.hub.docker.com', registryCredential) { 
-            # 업로드할 레지스트리 정보, Jenkins Credentials ID
-            dockerImage.push("${env.BUILD_NUMBER}") # 이미지에 빌드번호를 태그로 붙인 후 push
-            dockerImage.push("latest") # 이미지에 latest를 태그로 붙인 후 push
+            dockerImage.push("${env.BUILD_NUMBER}")
+            dockerImage.push("latest") 
           }
         }
       }
