@@ -6,7 +6,7 @@ pipeline {
   }
   agent any
   stages {
-    stage('Clone repository') {
+    stage('Clone repository') { 
       steps { 
         git 'https://github.com/DeveloperHailie/PracticeOpenSource.git'
       }
